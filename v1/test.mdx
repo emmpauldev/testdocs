@@ -1,7 +1,24 @@
 ---
 title: 'New  file 1'
 description: 'Description of your new file.'
-
-<Update />
 ---
+
+<ResponseField name="navigation" type="Navigation[]" required>
+  An array of groups with all the pages within that group
+  <Expandable title="Navigation">
+    <ResponseField name="group" type="string">
+    The name of the group.
+
+    Example: `Settings`
+
+    </ResponseField>
+    <ResponseField name="pages" type="string[]">
+    The relative paths to the markdown files that will serve as pages.
+
+    Example: `["customization", "page"]`
+
+    </ResponseField>
+
+  </Expandable>
+</ResponseField>
 
